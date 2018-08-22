@@ -2,36 +2,53 @@
 <html>
 <head>
 <title> Mess Complaint</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="IIIT Allahabad Mess complaints form.">
+<meta name="keywords" content="Mess Complaints IIIT Allahabad Boys Hostel Girls Hostel Food Complaint">
+
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'
+/>
+
 <link href="css/bulma.css" rel="stylesheet" />
 </head>
 <body>
-    <section class="hero is-primary is-small">
+    <section class="hero is-info is-small">
         <!-- Hero head: will stick at the top -->
         <div class="hero-head">
-          <nav class="navbar">
-            <div class="container">
-              <div class="navbar-brand">
-                <a class="navbar-item">
-                  
-                </a>
-                <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </span>
-              </div>
-              <div id="navbarMenuHeroA" class="navbar-menu">
-                <div class="navbar-end">
-                  <a class="navbar-item is-active">
-                    Home
+            <nav class="navbar is-transparent">
+                <div class="navbar-brand">
+                  <a class="navbar-item" href="https://bulma.io">
+                    
                   </a>
-                  <a class="navbar-item" href="form.html">
-                    Create new form
-                  </a>
-                 
+                  <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
                 </div>
-              </div>
-            </div>
+              
+                <div id="navbarExampleTransparentExample" class="navbar-menu">
+                  <div class="navbar-end">
+                    <a class="navbar-item" href="">
+                      Home
+                    </a>
+                    <div class="navbar-item ">
+                      <a class="navbar-item" href="form.html">
+                        Add new complaint
+                      </a>
+                      
+                    </div>
+                  </div>
+              
+           
+                </div>
+              </nav>
+
+
+
+
+     
           </nav>
         </div>
       
@@ -61,5 +78,19 @@
               </p>
             </div>
           </footer>
+
+<script>
+    (function() {
+      var burger = document.querySelector('.burger');
+      var nav = document.querySelector('#'+burger.dataset.target);
+     
+      burger.addEventListener('click', function(){
+        burger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+      });
+    })();
+</script>
+
+
 </body>
 </html>

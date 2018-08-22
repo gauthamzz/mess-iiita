@@ -1,15 +1,78 @@
 <!DOCTYPE html>
 <head>
-    <title>complaint form</title>
+    <title> Mess Complaint</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IIIT Allahabad Mess complaints form.">
+    <meta name="keywords" content="Mess Complaints IIIT Allahabad Boys Hostel Girls Hostel Food Complaint">
+    
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'
+    />
+    
+    <link href="css/bulma.css" rel="stylesheet" />
 </head>
 <body>
+    <section class="hero is-info is-small">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+            <nav class="navbar is-transparent">
+                <div class="navbar-brand">
+                  <a class="navbar-item" href="https://bulma.io">
+                    
+                  </a>
+                  <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              
+                <div id="navbarExampleTransparentExample" class="navbar-menu">
+                  <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">
+                      Home
+                    </a>
+                    <div class="navbar-item ">
+                      <a class="navbar-item" href="form.html">
+                        Add new complaint
+                      </a>
+                      
+                    </div>
+                  </div>
+              
+           
+                </div>
+              </nav>
+
+
+
+
+     
+          </nav>
+        </div>
+      
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="title">
+               Mess Complaints
+            </h1>
+            <h2 class="subtitle">
+                IIIT Allahabad
+            </h2>
+          </div>
+        </div>
+      
+
+      </section>
+
     <section class="content">
         <div class="feedback-description">
             <h1 class="title">
                 Have a feedback?
             </h1>
             <p class="subtitle">
-                Leave you feedback and we will help you!
+                Leave you feedback about your mess and we will help you!
             </p>
         </div>
         <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeEtE1V3XZofh2IkWQy_8CcFXk5ncu4QpmXsSF9HPdsifefEg/formResponse" method="POST" id="contact_form" name="" class="feedback-form">
@@ -44,21 +107,24 @@
               <input type="submit" value="Submit" id="form_button" />
             </div>
         </form> -->
+
+
+
+        <script>
+            (function() {
+              var burger = document.querySelector('.burger');
+              var nav = document.querySelector('#'+burger.dataset.target);
+             
+              burger.addEventListener('click', function(){
+                burger.classList.toggle('is-active');
+                nav.classList.toggle('is-active');
+              });
+            })();
+        </script>
+               
 </body>
 <style>
-    * {
-  font-weight: 300;
-  font-family: "Roboto", "Segoe Ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 29px;
-  color: #5b6d91;
-  margin: 0;
-}
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #ecf2f7;
-}
 
 button {
   font-size: 14px;
@@ -93,7 +159,7 @@ input:focus {
 
 .content {
   padding-top: 48px;
-  position: absolute;
+ 
   top: 0;
   left: 0;
   right: 0;
@@ -103,6 +169,7 @@ input:focus {
   align-items: center;
   max-width: 980px;
   justify-content: center;
+  background: #ecf2f7;
 }
 .content .feedback-description {
   max-width: 310px;
@@ -131,6 +198,14 @@ input:focus {
   }
   .content .feedback-form {
     padding-left: 0;
+  }
+  .content .feedback-description{
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
   }
 
   button {
